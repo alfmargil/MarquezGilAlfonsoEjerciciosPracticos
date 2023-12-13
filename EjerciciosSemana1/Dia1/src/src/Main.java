@@ -2,13 +2,14 @@ package src;
 
 import java.util.Scanner;
 
-/**
- *
+/*
  * @author Alfonso
  */
-public class Main {
+public class Main
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
         ejercicio1();
         ejercicio2();
@@ -18,7 +19,8 @@ public class Main {
     }
 
     // Ejercicio 1
-    public static void ejercicio1() {
+    public static void ejercicio1()
+    {
         System.out.println("Ejercicio 1:");
 
         System.out.println("Bienvenidos al sistema");
@@ -26,9 +28,10 @@ public class Main {
     }
 
     // Ejercicio 2
-    public static void ejercicio2() {
-        System.out.println("\nEjercicio 2:");
+    public static void ejercicio2()
+    {
 
+        System.out.println("\nEjercicio 2:");
         int number = 3;
         double number2 = 5.39;
         boolean estado = true;
@@ -38,21 +41,23 @@ public class Main {
     }
 
     // Ejercicio 3
-    public static void ejercicio3() {
+    public static void ejercicio3()
+    {
+
         System.out.println("\nEjercicio 3:");
         double base, altura, area;
         base = 10;
         altura = 7;
         area = (base * altura) / 2;
-
         System.out.println("El area del triangulo de base " + base + " y altura " + altura + " es: " + area);
 
     }
 
     // Ejercicio 4
-    public static void ejercicio4() {
-        System.out.println("\nEjercicio 4:");
+    public static void ejercicio4()
+    {
 
+        System.out.println("\nEjercicio 4:");
         int num1, num2;
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduzca el numero 1: ");
