@@ -4,5 +4,5 @@ Este directorio contiene los ejercicios realizados durante la semana 1.
 
 ## Herramientas Utilizadas
 
-- IDE: IntelliJ
+- IDE: IntelliJ IDEA
 - Lenguaje: Java 17
