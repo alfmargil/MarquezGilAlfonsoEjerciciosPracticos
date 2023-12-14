@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Electrodomestico " + e1.getCod()+" Marca: "+e1.getMarca()+" Modelo: "+e1.getModelo()+" Consumo(KwH): "+e1.getConsumo());
         System.out.println("Electrodomestico " + e2.getCod()+" Marca: "+e2.getMarca()+" Modelo: "+e2.getModelo()+" Consumo(KwH): "+e2.getConsumo());
         System.out.println("Electrodomestico " + e3.getCod()+" Marca: "+e3.getMarca()+" Modelo: "+e3.getModelo()+" Consumo(KwH): "+e3.getConsumo());
-        System.out.println("Electrodomestico " + e4.getMarca());
+        System.out.println("Electrodomestico " + e4.getMarca()); // Al no estar inicializado el valor que obtendremos es null
 
 
     }
