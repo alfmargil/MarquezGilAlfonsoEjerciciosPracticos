@@ -6,7 +6,7 @@ package ejercicio2;
  */
 public class Sombrero extends Vestimenta
 {
-    
+
     String tipo;
     String tamano;
 
@@ -36,7 +36,10 @@ public class Sombrero extends Vestimenta
     {
         this.tamano = tamano;
     }
-    
-    
-    
+
+    public void mostrarMensaje()
+    {
+        System.out.println("Este sombrero es de tipo: " + getTipo());
+    }
+
 }

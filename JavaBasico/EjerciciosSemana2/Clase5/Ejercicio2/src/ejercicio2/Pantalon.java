@@ -6,7 +6,7 @@ package ejercicio2;
  */
 public class Pantalon extends Vestimenta
 {
-    
+
     String estilo;
     String tipoTejido;
 
@@ -16,7 +16,6 @@ public class Pantalon extends Vestimenta
         this.estilo = estilo;
         this.tipoTejido = tipoTejido;
     }
-    
 
     public String getEstilo()
     {
@@ -37,7 +36,10 @@ public class Pantalon extends Vestimenta
     {
         this.tipoTejido = tipoTejido;
     }
-    
-    
-    
+
+    public void mostrarMensaje()
+    {
+        System.out.println("Estos pantalones son de estilo: " + getEstilo());
+    }
+
 }

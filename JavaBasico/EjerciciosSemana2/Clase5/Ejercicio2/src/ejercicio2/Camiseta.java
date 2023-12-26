@@ -6,7 +6,7 @@ package ejercicio2;
  */
 public class Camiseta extends Vestimenta
 {
-    
+
     String manga;
     String cuello;
 
@@ -16,7 +16,6 @@ public class Camiseta extends Vestimenta
         this.manga = manga;
         this.cuello = cuello;
     }
-
 
     public String getManga()
     {
@@ -37,7 +36,10 @@ public class Camiseta extends Vestimenta
     {
         this.cuello = cuello;
     }
-    
-    
-    
+
+    public void mostrarMensaje()
+    {
+        System.out.println("Esta camiseta es de manga: " + getManga());
+    }
+
 }

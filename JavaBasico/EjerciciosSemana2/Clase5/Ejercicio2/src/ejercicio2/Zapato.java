@@ -9,7 +9,7 @@ package ejercicio2;
  */
 public class Zapato extends Vestimenta
 {
-    
+
     String material;
     String tipoCierre;
 
@@ -19,7 +19,6 @@ public class Zapato extends Vestimenta
         this.material = material;
         this.tipoCierre = tipoCierre;
     }
-    
 
     public String getMaterial()
     {
@@ -40,7 +39,10 @@ public class Zapato extends Vestimenta
     {
         this.tipoCierre = tipoCierre;
     }
-    
-    
-    
+
+    public void mostrarMensaje()
+    {
+        System.out.println("Estos zapatos son de marca: " + getMarca());
+    }
+
 }
