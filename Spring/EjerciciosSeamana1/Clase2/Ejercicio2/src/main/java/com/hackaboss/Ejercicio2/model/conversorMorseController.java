@@ -41,7 +41,7 @@ public class conversorMorseController {
         MORSE_CODE_MAP.put('Z', "--..");
     }
 
-
+  /*  // Ejercicio 2
     @GetMapping("/descifrar")
     public String convertir(@RequestParam("palabra")String palabra){
 
@@ -55,5 +55,37 @@ public class conversorMorseController {
 
         return resultado.toString().trim();
     }
+
+   */
+
+    // Ejercicio 3
+
+    private String descifrarPalabra(String palabra) {
+        StringBuilder resultadoPalabra = new StringBuilder();
+
+        for (char caracter : palabra.toCharArray()) {
+            if (Character.isLetterOrDigit(caracter)) {
+                String codigoMorse = MORSE_CODE_MAP.getOrDefault(caracter, "");
+                resultadoPalabra.append(codigoMorse).append(" ");
+            }
+        }
+
+        return resultadoPalabra.toString().trim();
+    }
+
+    @GetMapping("/descifrar")
+    public String descifrarAMorse(@RequestParam("mensaje") String mensaje) {
+        mensaje = mensaje.toUpperCase();
+        StringBuilder resultado = new StringBuilder();
+
+        String[] palabras = mensaje.split(" ");
+
+        for (String palabra : palabras) {
+            resultado.append(descifrarPalabra(palabra)).append("   ");
+        }
+
+        return resultado.toString().trim();
+    }
+
 
 }
